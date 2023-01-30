@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  
+}
+body{
+  background-image: linear-gradient(
+    white,
+    skyblue,
+    pink
+    
+  );
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* .main-container{
+  background-image: linear-gradient(
+    white,
+    skyblue,
+    pink
+    
+  );
+  
+} */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  height: 50px;
+
+}
+
+nav{
+  background-color: aqua;
+}
+
+.links{
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
+.addLink{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+table{
+  text-align: center;
+  width: 95%;
+  margin: 5% auto;
+  background-color: white;
+  /* border-bottom: 1px solid black; */
+  border-collapse:collapse;
+  border-radius: 5px;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #04AA6D;
   color: white;
 }
+tr:nth-child(even) {background-color: #f2f2f2;}
 
-.App-link {
-  color: #61dafb;
+.std-title{
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-student ,.cancel-btn{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: larger;
+  margin: 2%;
+}
+
+.stud{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.input-container{
+  margin: 5% auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+input{
+  width: 500px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(159, 150, 150);
+  text-align: center;
+  margin: 2%;
+  background-color: inherit;
+  box-sizing: border-box;
+}
+
+
+.btns{
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cancel-link{
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.home{
+  width: 100%;
+  height: 800px;
+  background-image: linear-gradient(
+    skyblue,
+    pink,
+    yellowgreen
+  );
 }
