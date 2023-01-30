@@ -7,9 +7,9 @@ import Data from "./DataContext";
 import { useNavigate } from "react-router-dom";
 
 const Student = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const handleAdd = () => {
-    navigate('/addnewstudent')
+    navigate("/addnewstudent");
   };
 
   const context = useContext(Data);
@@ -20,20 +20,18 @@ const Student = () => {
       <div className="std-title">
         <span className="stud">Students Details</span>
         <button className="add-student" onClick={handleAdd}>
-          <span  className="addLink">
-            Add New Student
-          </span>
+          <span className="addLink">Add New Student</span>
         </button>
       </div>
       <div>
         <table>
           <thead>
             <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Course</th>
-            <th>Batch</th>
-            <th>Changes</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Course</th>
+              <th>Batch</th>
+              <th>Changes</th>
             </tr>
           </thead>
           <tbody>
@@ -45,7 +43,7 @@ const Student = () => {
                 <td>{item.Batch} </td>
                 <td>
                   {
-                    <Link to={'/edit'} state={{ data: index }}>
+                    <Link to={"/edit"} state={{ data: index }}>
                       Edit
                     </Link>
                   }

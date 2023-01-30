@@ -1,14 +1,8 @@
-*{
+* {
   margin: 0;
-  
 }
-body{
-  background-image: linear-gradient(
-    white,
-    skyblue,
-    pink
-    
-  );
+body {
+  background-image: linear-gradient(white, skyblue, pink);
   background-repeat: no-repeat;
 }
 
@@ -22,79 +16,100 @@ body{
   
 } */
 
-ul{
+ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 50px;
-
 }
 
-nav{
+nav {
   background-color: aqua;
 }
 
-.links{
+.links {
   text-decoration: none;
   color: black;
-  font-size: larger;
+  /* font-size: larger; */
   font-weight: bold;
 }
-.addLink{
+.addLink {
   text-decoration: none;
-  color: black;
-  font-weight: bolder;
+  color: white;
+  /* font-weight: bolder; */
 }
 
-table{
+table {
   text-align: center;
   width: 95%;
   margin: 5% auto;
   background-color: white;
   /* border-bottom: 1px solid black; */
-  border-collapse:collapse;
+  border-collapse: collapse;
   border-radius: 5px;
 }
-th, td {
+th,
+td {
   padding: 15px;
   text-align: center;
   border-bottom: 1px solid #ddd;
 }
-th {
-  background-color: #04AA6D;
-  color: white;
-}
-tr:nth-child(even) {background-color: #f2f2f2;}
 
-.std-title{
+th {
+  background-color: #04aa6d;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+td {
+  color: #04aa6d;
+  font-size: large;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.std-title {
   width: 95%;
   display: flex;
   justify-content: space-between;
   margin: 3%;
 }
 
-.add-student ,.cancel-btn{
+.add-student,
+.cancel-btn {
   width: 200px;
   height: 50px;
   border-radius: 20px;
   font-size: larger;
   margin: 2%;
+  font-weight: bolder;
+  border: none;
+  color: white;
+}
+.add-student {
+  background-color: #04aa6d;
+  color: white;
 }
 
-.stud{
+.cancel-btn {
+  background-color: rgb(228, 23, 23);
+}
+
+.stud {
   font-size: xx-large;
   font-weight: bolder;
 }
 
-.input-container{
+.input-container {
   margin: 5% auto;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-input{
+input {
   width: 500px;
   height: 50px;
   border-radius: 5px;
@@ -105,24 +120,36 @@ input{
   box-sizing: border-box;
 }
 
-
-.btns{
+.btns {
   width: 95%;
   display: flex;
   justify-content: flex-end;
 }
 
-.cancel-link{
+.cancel-link {
   text-decoration: inherit;
   color: inherit;
 }
 
-.home{
+.home {
   width: 100%;
-  height: 800px;
-  background-image: linear-gradient(
+  height: 600px;
+  /* background-image: linear-gradient(
     skyblue,
     pink,
     yellowgreen
-  );
+  ); */
+}
+
+.contact {
+  text-align: center;
+  color: orangered;
+  font-size: xx-large;
+  font-weight: bolder;
+  height: 600px;
+}
+
+.add-btn {
+  background-color: rgb(18, 231, 18);
+  font-weight: bolder;
 }
