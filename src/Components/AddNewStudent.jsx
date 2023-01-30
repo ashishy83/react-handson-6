@@ -69,7 +69,7 @@ const AddNewStudent = () => {
       </div>
       <div className="btns">
         <button onClick={onCancel} className='cancel-btn'><span className='cancel-link'>Cancel</span> </button>
-        <button className='cancel-btn' onClick={handleUpdate}>Update</button>
+        <button className='cancel-btn' onClick={handleUpdate}>Add</button>
       </div>
     </div>
   );
